@@ -1,0 +1,60 @@
+:root{
+    --red: red;
+    --green: green;
+    --gray: gray;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-red{
+    background-color: var(--red);
+    cursor: pointer;
+}
+
+.bg-green{
+    background-color: var(--green);
+}
+
+.bg-gray{
+    background-color: var(--gray);
+}
+
+main{
+    width: 1500px;
+    height: 564px;
+    display: flex;
+    gap: 10px;
+}
+
+.left, .right{
+    width: 25%;
+}
+
+.middle{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.top, .btm{
+    flex: 1 0 50%;
+    display: flex;
+    gap: 10px;
+}
+
+.col{
+    flex: 1;
+}
+
+/* Make the red banner to turn green when hover can be implemented using CSS but let me use JS vanilla through DOM here */
+
+/* .bg-red:hover{
+    background-color: var(--green);
+} */
